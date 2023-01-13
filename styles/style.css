@@ -13,7 +13,7 @@ body {
     Start Main Section
 --------------------------- */
 main {
-    padding: 35px 285px;
+    padding: 35px 250px;
 }
 .primary-title {
     font-size: 24px;
@@ -32,7 +32,7 @@ nav {
     align-items: center;
     background-color: #562eff;
     height: 94px;
-    padding: 0 285px;
+    padding: 0 250px;
 }
 nav img {
     height: 51px;
@@ -69,6 +69,7 @@ nav a {
 }
 .player {
     display: flex;
+    align-items: center;
     gap: 16px;
     font-size: 18px;
 }
@@ -114,6 +115,7 @@ hr {
     column-gap: 24px;
 }
 .course-item {
+    max-width: 350px;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
     padding: 13px 11px 16px;
     border-radius: 5px;
@@ -178,6 +180,63 @@ hr {
         flex-direction: column;
         gap: 10px;
         align-items: flex-start;
+    }
+    .latest-course {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    main {
+        padding: 20px 40px;
+    }
+    nav {
+        padding: 0 40px;
+    }
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .latest-course {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    main {
+        padding: 30px 90px;
+    }
+    nav {
+        padding: 0 90px;
+    }
+    .first-container, .last-container {
+        padding: 30px;
+    }
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .latest-course {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    main {
+        padding: 30px 150px;
+    }
+    nav {
+        padding: 0 150px;
+    }
+    .first-container, .last-container {
+        padding: 30px;
+    }
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
     }
     .latest-course {
         grid-template-columns: repeat(1, 1fr);
