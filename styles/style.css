@@ -13,7 +13,7 @@ body {
     Start Main Section
 --------------------------- */
 main {
-    padding: 35px 250px;
+    padding: 35px 160px;
 }
 .primary-title {
     font-size: 24px;
@@ -32,7 +32,7 @@ nav {
     align-items: center;
     background-color: #562eff;
     height: 94px;
-    padding: 0 250px;
+    padding: 0 160px;
 }
 nav img {
     height: 51px;
@@ -226,12 +226,6 @@ hr {
 }
 
 @media screen and (min-width: 993px) and (max-width: 1200px) {
-    main {
-        padding: 30px 150px;
-    }
-    nav {
-        padding: 0 150px;
-    }
     .first-container, .last-container {
         padding: 30px;
     }
